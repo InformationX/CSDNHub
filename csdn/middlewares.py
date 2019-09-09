@@ -112,7 +112,6 @@ class CsdnRandomUserAgentMiddleware(object):
         request.headers['User-Agent'] = get_random_user_agent()
 
 
-
 class CsdnProxyMiddleware(object):
 
     def process_request(self, request, spider):
