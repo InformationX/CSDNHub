@@ -5,10 +5,6 @@
 ![Python](https://img.shields.io/badge/python-3.72-blue.svg)
 <!-- [![GitHub stars](https://img.shields.io/github/stars/hsowan/CSDNHub)](https://github.com/hsowan/CSDNHub) -->
 
-
-GitHub: https://github.com/hsowan/CSDNHub  
-码云: https://gitee.com/hsowan/CSDNHub
-
 Scrapy + Selenium + Dingtalk + MongoDB + Docker 爬取CSDN资源
 (scrapy快速搭建爬虫项目, selenium用于爬取资源下载地址, dingtalk用于线上实时监控, mongodb用于存放资源信息, docker实现应用快速部署)
 
@@ -31,6 +27,9 @@ pipenv run scrapy crawl Resource
 
 # deploy
 docker-compose up -d
+
+# Export csv
+mongoexport -h 127.0.0.1 --port 27017 -u root -p=root --authenticationDatabase admin -d csdn -c resources -o test.csv
 ```
 
 Documentations:
@@ -43,10 +42,7 @@ Documentations:
 * [XPath 教程](https://www.runoob.com/xpath/xpath-tutorial.html)
 * [Dingtalk webhook robot](https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq)
 
-相关项目: [CSDNBot](https://github.com/hsowan/CSDNBot)
-
-关注个人公众号  
-![wechat](./image/wx.jpg)
+相关项目: [CSDNBot](https://gitee.com/hsowan/CSDNBot)
 
 
 

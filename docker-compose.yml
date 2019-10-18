@@ -28,12 +28,12 @@ services:
 #    ports:
 #      - 6666:4444
 #    container_name: selenium
-  csdn:
-    build: .
-    image: csdn-spider:latest
-    volumes:
-      - ./:/csdn/
-    restart: "no"
-    #  --loglevel INFO
-    command: scrapy crawl Resource --loglevel INFO
-    container_name: csdn-resource
+#  csdn:
+#    build: .
+#    image: csdn-spider:latest
+#    volumes:
+#      - ./:/csdn/
+#    restart: "no"
+#    #  --loglevel INFO
+#    command: scrapy crawl Resource --loglevel INFO
+#    container_name: csdn-resource
